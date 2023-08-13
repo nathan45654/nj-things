@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>really cool thing</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-  body  {
-    font-family:Arial, Helvetica, sans-serif; 
-    background-color: #e9ece6;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #545b5c;
-    text-align: center;    
-  }
-  
-  
-</style>
-
+  <link rel="stylesheet" href="styles.css">
+  <title>To-Do List</title>
 </head>
 <body>
-
-    <h1> House Server </h1>
-    <p title="Which esp is it">This is only for the LEDs for now</p>
-    <h2> Pick your favorite color buddy</h2>
-    <form action="/action_page.php">
-        <label for="favcolor">Select your favorite color:</label>
-        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-        <!-- <input type="submit" value="Submit"> -->
-    </form>
+  <h1>To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Enter a new task...">
+  <button id="addTask">Add Task</button>
+  <ul id="taskList"></ul>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
